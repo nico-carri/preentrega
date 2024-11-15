@@ -1,0 +1,86 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: bisque;
+    overflow-x: hidden;
+}
+
+header {
+    text-align: center;
+    color: #892525;
+    background-color: #201f1f;
+    padding: 20px 0;
+    position: relative;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+}
+
+main {
+    flex: 1; /* Esto ocupa el espacio disponible */
+    padding: 20px;
+    box-sizing: border-box; /* Incluye el padding en el tamaño total */
+}
+
+footer {
+    background-color: #201f1f;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+.header-logo {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px; /* Ajusta el tamaño según prefieras */
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px; /* Espacio entre el logo y el texto */
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* O prueba con space-between */
+    width: 100%; /* Asegúrate de que ocupe todo el ancho */
+    margin: 0; /* Sin márgenes adicionales */
+}
+
+.menu li {
+    margin: 0 15px; /* Ajusta si es necesario */
+}
+.menu a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+/* Media queries */
+@media (max-width: 600px) {
+    .menu {
+        flex-direction: column;
+    }
+    .menu li {
+        margin: 10px 0;
+    }
+}
+
