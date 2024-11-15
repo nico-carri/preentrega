@@ -1,0 +1,121 @@
+.review-section {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: bisque;
+    overflow-x: hidden;
+}
+
+header {
+    text-align: center;
+    color: #892525;
+    background-color: #201f1f; 
+    padding: 20px 0; 
+}
+
+.header-logo {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px; /* Ajusta el tamaño según prefieras */
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px; /* Espacio entre el logo y el texto */
+}
+
+.menu {
+    list-style: none; 
+    padding: 0; 
+    display: flex; 
+    justify-content: center; 
+}
+
+.menu li {
+    margin: 0 15px; 
+}
+
+.menu a {
+    text-decoration: none; 
+    color: #ccc; 
+}
+
+.menu a:hover {
+    text-decoration: underline; 
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+.write-review {
+    margin-bottom: 20px;
+}
+
+.star-rating {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.star {
+    font-size: 30px;
+    cursor: pointer;
+    color: #ddd;
+}
+
+.star.selected,
+.star:hover,
+.star:hover ~ .star {
+    color: #ffc107;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.review {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.review .stars {
+    color: #ffc107;
+}
+
+footer {
+    background-color: #201f1f;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

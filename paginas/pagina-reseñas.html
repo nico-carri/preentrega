@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reseñas.css">
+    <title>Reseñas</title>
+  </head>
+  <body>
+    <header>
+      <h1>YUGEN STORE</h1>
+      <nav>
+        <ul class="menu">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="paginas/pagina-productos.html">Productos</a></li>
+            <li><a href="paginas/pagina-ofertas.html">Ofertas</a></li>
+            <li><a href="paginas/pagina-nosotros.html">Sobre Nosotros</a></li>
+            <li><a href="paginas/pagina-contactos.html">Contacto</a></li>
+        </ul>
+    </nav>
+  </header>
+    <section id="reseñas">
+      <div class="review-section">
+        <h2>Reseñas de los Usuarios</h2>
+
+        <!-- Sección para escribir una reseña -->
+        <div class="write-review">
+            <h3>Escribe una Reseña</h3>
+            <textarea id="reviewText" placeholder="Escribe tu comentario aquí..."></textarea>
+            <button onclick="submitReview()">Enviar Reseña</button>
+        </div>
+
+        <!-- Sección de reseñas anteriores -->
+        <div id="reviews">
+            <!-- Las reseñas aparecerán aquí -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+  </section>
+  <footer>
+    <p>&copy; 2024 Yugen Store. Todos los derechos reservados.</p>
+</footer>
+  </body>
+</html>

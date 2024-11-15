@@ -1,0 +1,155 @@
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: bisque;
+}
+
+.header-menu-logo {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #201f1f;
+    color: #892525;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0; 
+    margin-top: 0px;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 80px;
+}
+
+footer {
+    background-color: #201f1f;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.produtos-oferta {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center;
+}
+
+.producto-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.producto-caja {
+    flex: 1 1 calc(25% - 20px);
+    max-width: 300px;
+    padding: 15px;
+    background-color:rgb(114, 85, 85);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+    overflow: hidden;
+}
+
+.producto-caja:hover .producto-imagen {
+    transform: scale(1.1);
+}
+
+h2 {
+    margin: 0;
+    padding-top: 20px;
+    text-align: center;
+    color: #892525;
+}
+
+.producto-imagen {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+    border-radius: 8px; 
+    transition: transform 0.3s ease;
+}
+
+
+@media (max-width: 768px) {
+    .header-logo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .producto-caja {
+        flex: 1 1 calc(50% - 20px); 
+    }
+}
+
+@media (max-width: 480px) {
+    .header-menu-logo {
+        font-size: 14px;
+        padding: 8px 0;
+    }
+
+    .menu {
+        font-size: 12px;
+    }
+
+    .producto-caja {
+        flex: 1 1 100%; 
+    }
+}
